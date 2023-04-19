@@ -15,7 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+    - name: Checkout embassy repo
     - uses: actions/checkout@v3
+      with:
+       repository: embassy-rs/embassy
+       path: ../embassy
+  
     - name: Build
-      run: cargo build --verbose
+    - run: cargo build --verbose
 
