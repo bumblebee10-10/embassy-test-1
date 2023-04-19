@@ -21,7 +21,16 @@ jobs:
       with:
        repository: embassy-rs/embassy
        path: embassy
-  
+    
+    - name: ls
+      run: ls -al
+      
+    - name: cd repo
+      run: cd embassy-test-1
+    
+    - name: ls2
+      run: ls -al
+      
     - name: Build
       run: cargo build --verbose
 
