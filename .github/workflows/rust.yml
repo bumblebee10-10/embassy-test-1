@@ -16,6 +16,11 @@ jobs:
 
     steps:
     
+    - name: Checkout self
+      uses: actions/checkout@v3
+      with:
+        path: main
+        
     - name: Checkout embassy repo
       uses: actions/checkout@v3
       with:
@@ -33,4 +38,5 @@ jobs:
       
     - name: Build
       run: cargo build --verbose
+
 
