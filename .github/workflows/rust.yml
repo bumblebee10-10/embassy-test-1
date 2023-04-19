@@ -23,5 +23,5 @@ jobs:
        path: ../embassy
   
     - name: Build
-    - run: cargo build --verbose
+      run: cargo build --verbose
 
